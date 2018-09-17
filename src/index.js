@@ -1,9 +1,9 @@
 module.exports = function solveEquation(equation) {
-  const firstXpos = equation.indexOf("x");
-  const secondXpos = equation.indexOf("x",firstXpos + 1);
+  const firXpos = equation.indexOf("x");
+  const secXpos = equation.indexOf("x",firXpos + 1);
     let a = equation.slice(0,equation.indexOf(" "));
-    let b = equation.slice(firstXpos + 3, secondXpos - 3);
-    let c = equation.slice(secondXpos + 1);
+    let b = equation.slice(firXpos + 3, secXpos - 3);
+    let c = equation.slice(secXpos + 1);
       a = eval(a);
       b = eval(b);
       c = eval(c);
